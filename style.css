@@ -18,6 +18,7 @@ body{
 }
 .header_input{
     box-shadow: none !important;
+    margin-right: 10px;
 }
 .header_btn{
     margin: 0;
@@ -85,6 +86,7 @@ form input{
     min-height: 80vh;
 }
 .banner_content h1{
+    display: inline-block;
     color: white;
     font-size: 50px;
     font-weight: 700; 
@@ -97,7 +99,7 @@ form input{
     margin: 0;
     padding: 0;
 }
-span{
+.banner_form span{
     margin-top: 10px;
     width: 100%;
     height: 1px;
@@ -110,6 +112,7 @@ span{
     background-color: white;
     border-radius: 5px;
     margin-top: 70px;
+    margin-bottom: 20px;
 }
 .Deliver_btn{
     padding: 5px 25px;
@@ -148,6 +151,7 @@ span{
 
 }
 .item_contant img{
+    width: 100%;
     border-radius: 10px;
     cursor: pointer;
     transition: .3s all ease-in-out;
@@ -156,6 +160,7 @@ span{
 .item_price{
     padding: 0px 20px;
     position: absolute;
+    left: 0;
     bottom: 0;
     background-color: #FFB30E;
     border-radius: 0px 10px 0px 10px;
@@ -209,14 +214,17 @@ span{
     color: white;
     width: 100%;
     background-color: #CD6122;
+    border: 1px solid #CD6122;
+    transition: .4s all ease-in-out;
+    border-radius: 7px 0px 7px 0px;
 }
 .popular_item a:focus{
     box-shadow: none;
 }
 .popular_item a:hover{
-    color: white;
+    color: black;
+    background: transparent;
 }
-
 .feature_position{
     position: relative;
 }
@@ -229,17 +237,17 @@ span{
     padding: 3px 20px;
     border-radius: 5px;
     font-weight: 600;
-   background-color: #CD6122;
+    background-color: #CD6122;
 }
 .feature_price1{
     position: absolute;
     left: 1%;
-    top: 3%;
+    top: 1%;
 }
 .feature_price2{
     position: absolute;
-    left: 48%;
-    top: 3%;
+    left: 29%;
+    top: 1%;
 }
 .feature_price1 ul, .feature_price2 ul{
     margin: 0;
@@ -265,9 +273,6 @@ span{
 .feature_logo{
     display: flex;
     justify-content: space-between;
-}
-.logo_price{
-    margin-right: 50px;
 }
 .logo_price h6{
     color: orange;
@@ -372,6 +377,11 @@ span{
 .footer ul li{
     list-style-type: none;
     color: white;
+    transition: .4s all ease-in-out;
+    cursor: pointer;
+}
+.footer ul li:hover{
+   color: #FFB30E;
 }
 .footer_icon i{
     margin-top: 10px;
@@ -390,8 +400,63 @@ form input{
     background: transparent !important;
     box-shadow: none !important;
     color: white !important;
+    margin-right: 10px;
 }
 form a{
     background-color:#FFB30E !important;
     color: white !important;
+}
+
+
+
+.flex-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #60D7A9;
+}
+  
+.dots .dot {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 10px 0 10px;
+    border-radius: 50%;
+    background: #FC5B00;
+    -webkit-animation: dot-dot-dot 1.4s linear infinite;
+    animation: dot-dot-dot 1.4s linear infinite;
+}
+  
+.dots .dot:nth-child(2) {
+    animation-delay: .2s;
+}
+  
+.dots .dot:nth-child(3) {
+    animation-delay: .4s;
+}
+  
+@keyframes dot-dot-dot {
+    0%, 60%, 100% {
+      -webkit-transform: initial;
+        -ms-transform: initial;
+          transform: initial;
+}
+    30% {
+      -webkit-transform: translateY(-25px);
+        -ms-transform: translateY(-25px);
+          transform: translateY(-25px);
+    }
 }

@@ -1,25 +1,48 @@
-@media(min-width:320px) and (max-width:767px){
-    .ph_img{
-        display: none;
-    }
-    .logo_price{
-        margin-right: 250px;
-    }
-}
-@media(min-width:576px) and (max-width:1199px){
-    .logo_price{
-        margin-right: 200px;
-    }
-}
 @media(min-width:320px) and (max-width:415px){
     .app_store img{
         width: 40%;
     }
 }
+@media(min-width:320px) and (max-width:767px){
+    .ph_img{
+        display: none;
+    }
+}
+@media(min-width:320px) and (max-width:575px){
+    .banner_content h1 {
+        font-size: 35px;
+    }
+    form input::placeholder{
+       font-size: 13px;
+    }
+    .popular_item a {
+        width: 50%;
+    }
+    .feature_price2{
+        left: 50%;
+        top: 1%;
+    }
+    .feature_price1{
+        left: 3%;
+    }
+}
+@media(min-width:320px) and (max-width:1199px){
+    .search_icon{
+        top: 30%;
+    }
+}
+
 @media(min-width:768px) and (max-width:991px){
     .app_store img{
         width: 45%;
     }
+    .banner img {
+        margin-top: 114px;
+    }
+    .best h2{
+        margin-top: 50px;
+    }
+    
 }
 @media(min-width:992px) and (max-width:1199px){
     .feature_price1{
@@ -47,6 +70,9 @@
         top: 10%;
         left: 30%;
     }
+    .login_icon{
+        right: 18%;
+    }
 }
 @media(min-width:501px) and (max-width:575px){
     .position_texr h3{
@@ -65,7 +91,7 @@
         top: 10%;
     }
 }
-@media(min-width:402px) and (max-width:422px){
+@media(min-width:576px) and (max-width:991px){
     .feature_price2{
         left: 3%;
         top: 18%;
@@ -73,31 +99,36 @@
     .feature_price1{
         left: 3%;
     }
-    .feature_logo{
-        margin-right: 500px;
-    }
 }
-@media(min-width:422px) and (max-width:450px){
+@media(min-width:1200px) and (max-width:1400px){
     .feature_price2{
-        left: 6%;
-        top: 18%;
+        left: 50%;
+        top: 1%;
     }
     .feature_price1{
-        left: 6%;
+        left: 2%;
     }
 }
-@media(min-width:450px) and (max-width:490px){
-    .feature_price1{
-        left: 9%;
+@media(min-width:401px) and (max-width:450px){
+    .login_icon{
+        right: 18%;
     }
 }
-@media(min-width:491px) and (max-width:575px){
-    .feature_price1{
-        left: 17%;
+@media(min-width:451px) and (max-width:500px){
+    .login_icon{
+        right: 15%;
     }
 }
-@media(min-width:406px) and (max-width:575px){
-    .item_price{
-        left: 15%;
+@media(min-width:501px) and (max-width:767px){
+    .login_icon{
+        right: 15%;
     }
 }
+@media(min-width:768px) and (max-width:991px){
+    .login_icon{
+        right: 10%;
+    }
+}
+
+
+
