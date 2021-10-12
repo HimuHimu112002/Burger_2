@@ -6,6 +6,25 @@
 body{
     font-family: 'Playfair Display', serif;
 }
+.topbtn{
+    position: fixed;
+    bottom: 0;
+    right: 29px;
+    z-index: 100;
+    padding-bottom: 25px;
+    display: none;
+}
+.topbtn i{
+    color: #fff;
+    font-size: 27px;
+    background: #919190;
+    padding: 16px;
+    border-radius: 50%;
+    transition: .25s all ease-in-out;
+}
+.topbtn i:hover{
+    background: #f39c12;
+}
 .navbar-brand{
     display: flex;
 }

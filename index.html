@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="media.css">
   </head>
   <body>
+    <div class="topbtn" id="topbtn">
+      <a href="#"><i class="fas fa-chevron-up"></i></a>
+    </div>
     <div class="indicator" id="ind">
       <i class="fas fa-user" id="#i"></i>
     </div>
@@ -730,6 +733,17 @@
         indicator.addEventListener('click', ()=>{
             document.body.classList.toggle('java');
         })
+
+        $(document).ready(function(){
+
+          $(window).scroll(function(){
+        if($(this).scrollTop() > 40){
+           $('#topbtn').slideDown(400);
+        }else{
+          $('#topbtn').slideUp(400);
+        }
+        });
+        });
     </script>
   </body>
 </html>
