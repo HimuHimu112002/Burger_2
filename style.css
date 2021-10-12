@@ -19,7 +19,9 @@ body{
 .header_input{
     box-shadow: none !important;
     margin-right: 10px;
+    color: black !important;
 }
+
 .header_btn{
     margin: 0;
     padding: 0;
@@ -206,6 +208,7 @@ form input{
 }
 .popular_item h4{
     font-size: 14px;
+    color: #212121;
 }
 .popular_item a{
     margin: 0;
@@ -459,4 +462,35 @@ form a{
         -ms-transform: translateY(-25px);
           transform: translateY(-25px);
     }
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -2;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.owl-dots .owl-dot span{
+    width: 7px;
+    height: 7px;
+    background: transparent;
+    display: block;
+    margin: 0px 10px;
+    border-radius: 10px;
+    border: 1px solid #F69165;
+}
+.owl-dots .active span{
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin: 0px 10px;
+    border-radius: 10px;
+    background-color: #F69165;
+}
+.owl-carousel{
+    z-index: 0;
 }
