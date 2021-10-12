@@ -73,15 +73,22 @@ form input{
 }
 .banner img{
     padding: 20px 0;
-    width: 100%;
     display: flex;
     align-items: center;
-    transition: .3s all ease-in-out;
+    /* transition: .3s all ease-in-out; */
     cursor: pointer;
 }
-.banner img:hover{
-    transform: translateY(-15px);
-   
+.feature-1{
+    animation: animate 1s infinite;
+    animation-direction: alternate;
+}
+@keyframes animate{
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(10px);
+    }
 }
 .banner_content{
     margin-top: 100px;
