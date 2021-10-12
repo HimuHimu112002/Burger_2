@@ -145,13 +145,16 @@ form input{
 .banner_btn{
     width: 120px;
     background-color: #CD6122;
+    border: 1px solid #CD6122;
     color: white;
+    border-radius: 5px 0px 5px 0px;
 }
 .banner_btn:focus{
     box-shadow: none;  
 }
 .banner_btn:hover{
-   color: white; 
+    background: transparent;
+   color: black; 
 }
 
 
@@ -437,6 +440,7 @@ form a{
     width: 100%;
     height: 100%;
     background: #60D7A9;
+    z-index: 11;
 }
   
 .dots .dot {
@@ -470,6 +474,8 @@ form a{
           transform: translateY(-25px);
     }
 }
+
+
 .owl-dots{
     text-align: center;
     margin-top: 15px;
@@ -499,5 +505,70 @@ form a{
     background-color: #F69165;
 }
 .owl-carousel{
+    z-index: 10;
+}
+
+
+.social-fixed ul{
+    display: flex;
+    list-style: none;
+    padding: 21px 12px;
+    margin: 0;
+    background: #F7DC4F;
+    flex-direction: column;
+    align-items: center;
+}
+.social-fixed ul li{
+    margin: auto;
+    margin-bottom: 12px;
+}
+.social-fixed ul li a{
+    color: rgb(0, 0, 0);
+}
+.social-fixed ul li a i{
+    transition: .35s all ease-in-out;
+    font-size: 18px;
+}
+.fa-facebook-f:hover, .fa-twitter:hover, .fa-instagram:hover, .fa-youtube:hover{
+    color: rgb(34, 148, 255);
+}
+    
+.java .social-fixed{
+    right: 0px;
     z-index: 0;
+    top: 50%;
+    transform:translateY(-50%);
+}
+.java .indicator{
+    right: 44px;
+}
+.indicator{
+    right: 0px;
+    background: #F7DC4F;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s all ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+.indicator i{
+    color: #000;
+    padding: 16px;
+    font-size: 23px;
+    animation: rgb 5s linear infinite;
+    transform: rotate(0);
+}
+@keyframes rgb{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.social-fixed{
+    right: -44px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .25s all ease-in-out;
+    z-index: 10;
 }
