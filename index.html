@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/fontawesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="media.css">
   </head>
@@ -131,7 +132,7 @@
         <div class="container">
           <div class="row mt-5">
             <div class="col-md-6 m-auto text-center">
-              <h1>How does it work</h1>
+              <h1 class="wow flipOutX">How does it work</h1>
             </div>
           </div>
           <div class="row my-5">
@@ -161,7 +162,7 @@
       <section class="popular_item">
         <div class="container">
           <div class="row">
-            <div class="col-md-6 m-auto text-center my-5"><h1>Popular items</h1></div>
+            <div class="col-md-6 m-auto text-center my-5"><h1 class="wow flipOutX">Popular items</h1></div>
           </div>
               <div class="owl-carousel">
                       <div class="container">
@@ -231,7 +232,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6 my-5 text-center m-auto">
-              <h1>Featured Restaurants</h1>
+              <h1 class="wow flipOutX">Featured Restaurants</h1>
             </div>
           </div>
           <div class="row">
@@ -665,9 +666,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
-        integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" 
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"crossorigin="anonymous"></script>
         <script src="typed.min.js"></script>
         <script src="js/jquery.preloadinator.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
@@ -675,7 +674,7 @@
         
         <script>
           $('.js-preloader').preloadinator({
-            minTime: 3000
+            minTime: 1000
           });
         </script>
         <script>
@@ -745,6 +744,21 @@
         });
         });
     </script>
+
+<script src="js/wow.min.js"></script>
+<script>
+  wow = new WOW(
+    {
+      boxClass:     'wow',      // default
+      animateClass: 'animated', // default
+      offset:       0,          // default
+      mobile:       false,             
+      live:         true        // default
+    }
+  )
+wow.init();
+</script>
+<script src="js/css3-animate-it.js"></script>
   </body>
 </html>
 

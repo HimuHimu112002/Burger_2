@@ -10,7 +10,7 @@ body{
     position: fixed;
     bottom: 0;
     right: 29px;
-    z-index: 100;
+    z-index: 1;
     padding-bottom: 25px;
     display: none;
 }
@@ -94,7 +94,6 @@ form input{
     padding: 20px 0;
     display: flex;
     align-items: center;
-    /* transition: .3s all ease-in-out; */
     cursor: pointer;
 }
 .feature-1{
@@ -167,6 +166,7 @@ form input{
     border: 1px solid #CD6122;
     color: white;
     border-radius: 5px 0px 5px 0px;
+    transition: .3s all ease-in-out;
 }
 .banner_btn:focus{
     box-shadow: none;  
@@ -414,6 +414,7 @@ form input{
 }
 .footer ul li:hover{
    color: #FFB30E;
+   transform: translateX(5px);
 }
 .footer_icon i{
     margin-top: 10px;
@@ -526,7 +527,6 @@ form a{
 .owl-carousel{
     z-index: 10;
 }
-
 
 .social-fixed ul{
     display: flex;
